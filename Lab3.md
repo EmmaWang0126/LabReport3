@@ -6,6 +6,7 @@ The four interesting command-line options that I chose:
 * grep -c
 * grep -r
 
+
 ### For ```grep -n``` : 
 -n : is used to display line numbers along with the matching lines of text.
 Here are the two examples: 
@@ -43,3 +44,41 @@ Output: ```people
            people
            people
            people```
+                                                                                
+```grep -o``` is dispays the same times of the given words. It is useful for various text processing tasks since it allows us to extract specific patterns or substrings from a file or input stream.         
+
+
+### For ```grep -c``` : 
+-c : count the number of lines that match a specified pattern in a file or input stream.
+Here are two examples: 
+#### Example1: 
+Command: ```grep -c "WAR" technical/911report/chapter-2.txt```.    
+Output: ```2```                               
+
+#### Example2: 
+Command: ```grep -c "public" technical/911report/chapter-6.txt``` 
+Output: ```12```                                               
+
+                                                        
+```grep -c``` displays the count of matching lines instead of the actual lines themselves. It's useful because it allows us to quickly determine the number of lines that match a particular pattern in a file or input stream.     
+
+
+### For ```grep -r``` : 
+-r : is used to recursively search for a pattern in files within a directory and its subdirectories. It scans all files and directories within the specified directory, searching for occurrences of the specified pattern. 
+Here are two examples: 
+#### Example1: 
+Command: ```grep -r "CONFIGURATION" technical/``` 
+Output: ```technical//government/About_LSC/CONFIG_STANDARDS.txt:STATE PLANNING CONFIGURATION STANDARDS Final Task Force Report
+technical//government/About_LSC/CONFIG_STANDARDS.txt:STATE PLANNING CONFIGURATION STANDARDS
+technical//government/About_LSC/State_Planning_Special_Report.txt:STATE PLANNING & RECONFIGURATION
+technical//government/About_LSC/State_Planning_Special_Report.txt:II. LSC CONVENES RECONFIGURATION TASK FORCE
+technical//government/About_LSC/State_Planning_Special_Report.txt:IV. REPORT ON LSC'S RECONFIGURATION STANDARDS
+technical//government/About_LSC/State_Planning_Special_Report.txt:V. RECONFIGURATION REVIEW PROCESS```
+
+#### Example2: 
+Command: ```grep -r "MCDONOUGH" technical/``` 
+Output: ```technical//government/Media/5_Legal_Groups.txt:BY EDWARD MCDONOUGH```
+
+```grep -r``` is useful because it allows us to perform a recursive search for a pattern in multiple files within a directory and its subdirectories, making it convenient for searching through large codebases or directories with nested files.
+
+The definition of four grep are from grep --help;
