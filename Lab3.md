@@ -24,10 +24,10 @@ Output: ```11:            While the plan at the elementary school had been to re
 ```grep -n``` is to find the given words, display the lines and line number in a spacific file. It's useful because we can easily find out that the word we want in the exactly which line and line numbers of a file. 
 
 ### For ```grep -o``` : 
--o : is used to extract only the matched patterns or substrings from the input text.
+-o : is used to extract only the matched patterns or substrings from the input text.                                                             
 Here are the two examples: 
 #### Example1: 
-Command: ```grep -o "composing" technical/911report/chapter-11.txt```                                                          
+Command: ```grep -o "composing" technical/911report/chapter-11.txt```.                                                                                          
 Output: ```composing```
 
 #### Example2: 
